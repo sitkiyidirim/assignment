@@ -1,0 +1,47 @@
+﻿
+<div class="navbar navbar-expand navbar-dark" style="background-color: rgb(7, 105, 129);">
+    <a href="http://angular.io" class="navbar-brand ms-1">
+        <img width="40" src="../assets/img/angular.svg" alt="angular logo">
+        Angular
+    </a>
+
+
+    <div class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a [routerLink]="['/admin']" routerLinkActive="active" class="nav-link">Admin</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['/home']" routerLinkActive="active" class="nav-link">Home</a>
+        </li>
+    </div>
+    <div class="navbar-nav ms-auto" *ngIf="!currentUser?.id">
+        <li class="nav-item">
+            <a [routerLink]="['/questionnaire']" routerLinkActive="active" class="nav-link">Questionnaire</a>
+        </li>
+      
+        <li class="nav-item">
+            <a [routerLink]="['/register']" routerLinkActive="active" class="nav-link">Sign up</a>
+        </li>
+        <li class="nav-item me-1">
+            <a [routerLink]="['/login']" routerLinkActive="active" class="nav-link">Sign in</a>
+        </li>
+    </div>
+    
+    <div class="navbar-nav ms-auto" *ngIf="currentUser?.id" >
+        <li class="nav-item">
+            <a [routerLink]="['/questionnaire']" routerLinkActive="active" class="nav-link">Survey</a>
+        </li>
+        <li class="nav-item">
+            <a [routerLink]="['/customerDetailPage']" routerLinkActive="active" class="nav-link">Profile</a>
+        </li>
+        <li class="nav-item me-1">
+            <a (click)="logOut()" class="nav-link"
+            style="cursor: pointer;"
+            >Sign Out</a>
+        </li>
+    </div>
+
+</div>
+
+
+<router-outlet> </router-outlet>

@@ -1,0 +1,151 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <div class="w3-row-padding">
+    
+      <div class="w3-third">
+      
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="{{infor.profile_pic_url}}" style="width:100%" alt="Avatar" >
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2 style="color: rgb(12, 122, 156);">{{infor.first_name}} {{infor.last_name}}</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+              <br>
+              <h3>Personel information</h3>
+            <p><i class="fa fa-id-badge fa-fw w3-margin-right w3-large w3-text-teal"></i>Customer</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{infor.locale}}</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>{{infor.e_mail}}</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>{{infor.phone_no}}</p>
+           
+            <hr>
+
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>special days</b></p>
+            <p>Date of birth</p>
+            <div class="w3-light-grey w3-small">
+              <div style="margin-left: 15px;">{{infor.date_of_birth}}</div>
+            </div>
+
+            <p>Wedding anniversary</p>
+            <div class="w3-light-grey w3-small">
+              <div style="margin-left: 15px;">{{infor.wedding_anniversary}}</div>
+            </div>
+
+            <hr>
+  
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>hospitality information</b></p>
+            <p>Room No</p>
+            <div class="w3-light-grey w3-small">
+              <div style="margin-left: 15px; width: 60px;">{{infor.room_no}}</div>
+            </div>
+            <p>Entry date</p>
+            <div class="w3-light-grey w3-small">
+              <div style="margin-left: 15px;">{{infor.entry_date}}</div>
+            </div>
+            <p>Release date</p>
+            <div class="w3-light-grey w3-small">
+              <div style="margin-left: 15px;">{{infor.release_date}}</div>
+            </div>
+            <p>Booking date</p>
+            <div class="w3-light-grey w3-small">
+              <div style="margin-left: 15px;">{{infor.booking_date}}</div>
+            </div>
+           
+            
+            
+            <br>
+          </div>
+        </div><br>
+  
+      </div>
+  
+      <div class="w3-twothird">
+      
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Room Sets</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"> <b> Pillow Type {{infor.pillow_type}} </b></h5>
+            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Bed Type {{infor.bed_type}}</b></h5>
+            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+        </div>
+  
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Loyalty Info</h2>
+          
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>points earned {{infor.loyalty_info.points_earned}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>points spend {{infor.loyalty_info.points_spend}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>remaining point {{infor.loyalty_info.remaining_point}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>overnight tay {{infor.loyalty_info.overnight_stay}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>target night stay {{infor.loyalty_info.target_night_stay}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>earned night stay {{infor.loyalty_info.earned_night_stay}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>room type {{infor.loyalty_info.room_type}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>menu item id {{infor.loyalty_info.menu_item_id}}</b></h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eaque culpa sint fugiat eum, atque accusantium dicta!</p>
+            <hr>
+          </div>
+         
+       
+        </div>
+  
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+  

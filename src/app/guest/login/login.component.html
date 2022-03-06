@@ -1,0 +1,51 @@
+<div class="enterance-page">
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+
+    <div class="login">
+      <form #f="ngForm" (ngSubmit)="f.form.valid && login()">
+        <label for="chk" aria-hidden="true">Login</label>
+        <input
+          type="email"
+          placeholder="Email"
+          required=""
+          id="username"
+          name="username"
+          [(ngModel)]="user.username"
+          #username="ngModel"
+          class="form-control"
+        />
+        <div class="alert-danger req" *ngIf="!username.valid && f.submitted">
+          username is required
+        </div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="user.password"
+          #password="ngModel"
+          class="form-control"
+          placeholder="Password"
+          required=""
+        />
+        <div class="alert-danger req" *ngIf="!password.valid && f.submitted">
+          password is required
+        </div>
+        <button type="submit">Login</button>
+        <div class="aler alert-danger req" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </div>
+      </form>
+    </div>
+
+    <div class="signup">
+      <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="txt" placeholder="User name" required="" />
+        <input type="email" name="email" placeholder="Email" required="" />
+        <input type="password" name="pswd" placeholder="Password" required="" />
+        <button>Sign up</button>
+      </form>
+    </div>
+  </div>
+</div>
